@@ -81,6 +81,15 @@ public final class DownloadManager {
         return downloadInfoList.get(index);
     }
 
+    /**
+     * @param url 下载地址
+     * @param label 下载文件名称
+     * @param savePath  存放地址
+     * @param autoResume
+     * @param autoRename  是否重命名
+     * @param viewHolder
+     * @throws DbException
+     */
     public synchronized void startDownload(String url, String label, String savePath,
                                            boolean autoResume, boolean autoRename,
                                            DownloadViewHolder viewHolder) throws DbException {
